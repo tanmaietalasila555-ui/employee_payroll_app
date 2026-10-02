@@ -1,0 +1,6 @@
+{
+  "name": "Employee Payroll Management System",
+  "description": "Desktop-grade C and Win32 API Employee Payroll Management System with automated salary calculations, CRUD operations, persistent file handling, and payslip generation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

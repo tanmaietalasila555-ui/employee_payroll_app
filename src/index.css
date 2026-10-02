@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+/* Classic Win32 Bevel borders & Desktop System styling */
+.win32-bevel-outset {
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #808080;
+  border-bottom: 2px solid #808080;
+  box-shadow: 1px 1px 0px #000000;
+}
+
+.win32-bevel-inset {
+  border-top: 2px solid #808080;
+  border-left: 2px solid #808080;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: inset 1px 1px 0px #000000;
+}
+
+.win32-button {
+  background: #dfdfdf;
+  border-top: 2px solid #ffffff;
+  border-left: 2px solid #ffffff;
+  border-right: 2px solid #7f7f7f;
+  border-bottom: 2px solid #7f7f7f;
+  box-shadow: 1px 1px 0 #000000;
+}
+
+.win32-button:active {
+  border-top: 2px solid #7f7f7f;
+  border-left: 2px solid #7f7f7f;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  box-shadow: none;
+  padding-top: calc(theme('spacing.1') + 1px);
+  padding-left: calc(theme('spacing.2') + 1px);
+}
+
+.font-win32 {
+  font-family: 'Segoe UI', Tahoma, 'MS Sans Serif', sans-serif;
+}
+
+/* Print Styles for Official Payslip & Reports */
+@media print {
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .printable-card {
+    border: none !important;
+    box-shadow: none !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+}
